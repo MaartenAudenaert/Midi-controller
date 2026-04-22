@@ -1,0 +1,1525 @@
+Dependencies for Project 'MIDI', Target 'MIDI': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (startup_stm32h533xx.s)(0x69E8E10C)(--target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 540" -Wa,armasm,--pd,"STM32H533xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o midi/startup_stm32h533xx.o)
+F (..\Core\Src\usb_descriptors.c)(0x69A16299)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/usb_descriptors.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+F (..\Core\Src\tusb_port.c)(0x698EFEAE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/tusb_port.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+I (..\Core\Inc\main.h)(0x69DBE3CD)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_nucleo_conf.h)(0x698EFEAE)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo_errno.h)(0x69C64182)
+F (../Core/Src/mcp23s17.c)(0x69A15B25)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/mcp23s17.o -MMD)
+I (..\Core\Inc\mcp23s17.h)(0x69A15B25)
+I (..\Core\Inc\main.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_nucleo_conf.h)(0x698EFEAE)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo_errno.h)(0x69C64182)
+F (../Core/Src/main.c)(0x69E8EA36)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/main.o -MMD)
+I (..\Core\Inc\main.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_nucleo_conf.h)(0x698EFEAE)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo_errno.h)(0x69C64182)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+I (..\Core\Inc\mcp23s17.h)(0x69A15B25)
+F (../Core/Src/stm32h5xx_it.c)(0x69DBE3CB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_it.o -MMD)
+I (..\Core\Inc\main.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_nucleo_conf.h)(0x698EFEAE)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo_errno.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_it.h)(0x69DBE3CC)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+F (../Core/Src/stm32h5xx_hal_msp.c)(0x69E8DBB8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_msp.o -MMD)
+I (..\Core\Inc\main.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_nucleo_conf.h)(0x698EFEAE)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo_errno.h)(0x69C64182)
+F (..\Middlewares\Third_Party\TinyUSB\src\tusb.c)(0x69E8E23A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/tusb.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_private.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd_pvt.h)(0x69E8E23A)
+F (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.c)(0x69E8E23A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/usbd.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\dcd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_private.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd_pvt.h)(0x69E8E23A)
+F (..\Middlewares\Third_Party\TinyUSB\src\device\usbd_control.c)(0x69E8E23A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/usbd_control.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\dcd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd_pvt.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_private.h)(0x69E8E23A)
+F (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.c)(0x69E8E23A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/midi_device.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\usbd_pvt.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_private.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi_device.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\audio\audio.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\class\midi\midi.h)(0x69E8E23A)
+F (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.c)(0x69E8E23A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/tusb_fifo.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+F (..\Middlewares\Third_Party\TinyUSB\src\portable\st\stm32_fsdev\dcd_stm32_fsdev.c)(0x69E8E23A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/dcd_stm32_fsdev.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\dcd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\portable\st\stm32_fsdev\fsdev_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\portable\st\stm32_fsdev\fsdev_stm32.h)(0x69E8E23A)
+F (..\Middlewares\Third_Party\TinyUSB\src\portable\st\stm32_fsdev\fsdev_common.c)(0x69E8E2FD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/fsdev_common.o -MMD)
+I (..\Middlewares\Third_Party\TinyUSB\src\tusb_option.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_compiler.h)(0x69E8E23A)
+I (..\Core\Inc\tusb_config.h)(0x69A1584E)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_mcu.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\portable\st\stm32_fsdev\fsdev_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_common.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_verify.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_types.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_debug.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\device\dcd.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\osal\osal_none.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\common\tusb_fifo.h)(0x69E8E23A)
+I (..\Middlewares\Third_Party\TinyUSB\src\portable\st\stm32_fsdev\fsdev_stm32.h)(0x69E8E23A)
+F (../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo.c)(0x69C64182)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_nucleo.o -MMD)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo.h)(0x69C64182)
+I (..\Core\Inc\stm32h5xx_nucleo_conf.h)(0x698EFEAE)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+I (..\Drivers\BSP\STM32H5xx_Nucleo\stm32h5xx_nucleo_errno.h)(0x69C64182)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_adc.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_adc_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_adc_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_dma.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_dma_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_rcc.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_rcc_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_flash.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_flash_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_gpio.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_pwr.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_pwr_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_cortex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_exti.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_exti.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_spi.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_spi_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_tim.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_tim_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_pcd.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_pcd_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_ll_usb.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_usart.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_usart.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_usart_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_usart_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart_ex.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_uart_ex.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart.c)(0x69C64183)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/stm32h5xx_hal_uart.o -MMD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
+F (../Core/Src/system_stm32h5xx.c)(0x698EFEAE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/MIDI/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc -I ../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -I ../Drivers/BSP/STM32H5xx_Nucleo -I ../Drivers/CMSIS/Device/ST/STM32H5xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/TinyUSB/src -I ../Middlewares/Third_Party/TinyUSB/src/device -I ../Middlewares/Third_Party/TinyUSB/src/class/midi -I ../Middlewares/Third_Party/TinyUSB/src/class/audio -I ../Middlewares/Third_Party/TinyUSB/src/common -I ../Middlewares/Third_Party/TinyUSB/src/osal -I ../Middlewares/Third_Party/TinyUSB/hw/bsp -I ../Middlewares/Third_Party/TinyUSB/src/portable/st/stm32_fsdev-I./RTE/_MIDI-IC:/Users/School/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32H533xx -D_RTE_ -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32H533xx-o midi/system_stm32h5xx.o -MMD)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h5xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\stm32h533xx.h)(0x69C64183)
+I (..\Drivers\CMSIS\Include\core_cm33.h)(0x69C64182)
+I (..\Drivers\CMSIS\Device\ST\STM32H5xx\Include\system_stm32h5xx.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal.h)(0x69C64183)
+I (..\Core\Inc\stm32h5xx_hal_conf.h)(0x69DBE3CD)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_def.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_rcc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_gpio_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_dma_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_cortex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_adc.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_adc_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_flash_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pwr_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_spi_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_tim_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_uart_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_ll_usb.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_pcd_ex.h)(0x69C64183)
+I (..\Drivers\STM32H5xx_HAL_Driver\Inc\stm32h5xx_hal_exti.h)(0x69C64183)
