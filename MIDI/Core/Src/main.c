@@ -73,6 +73,8 @@
 #define D8_BLINK_MS                 200U
 #define SK6812_PC6_TEST_ENABLE      1U
 #define SK6812_PC6_BLINK_MS         1000U
+#define SK6812_PC6_TOGGLE_KEY_INDEX 0U
+#define SK6812_PC6_COLOR_COUNT      4U
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -591,6 +593,9 @@ int main(void)
 #if SK6812_PC6_TEST_ENABLE
   uint32_t last_pc6_toggle_ms = 0;
   uint8_t pc6_color_step = 0;
+  uint8_t pc6_test_enabled = 0;
+  uint8_t pc6_toggle_stable_pressed = 0;
+  uint8_t pc6_toggle_debounce_count = 0;
 #endif
   
 #if MIDI_DIAGNOSTICS
@@ -614,18 +619,56 @@ int main(void)
     }
 #endif
 #if SK6812_PC6_TEST_ENABLE
-    if ((now - last_pc6_toggle_ms) >= SK6812_PC6_BLINK_MS) {
-      last_pc6_toggle_ms = now;
-      if (pc6_color_step == 0U) {
-        SK6812_SetAll(48U, 0U, 0U);    // red
-      } else if (pc6_color_step == 1U) {
-        SK6812_SetAll(0U, 48U, 0U);    // green
-      } else if (pc6_color_step == 2U) {
-        SK6812_SetAll(0U, 0U, 48U);    // blue
+    static const uint8_t pc6_colors[SK6812_PC6_COLOR_COUNT][3] = {
+      {48U, 0U, 0U},    // red
+      {0U, 48U, 0U},    // green
+      {0U, 0U, 48U},    // blue
+      {32U, 32U, 32U}   // white
+    };
+    uint16_t pc6_toggle_bit = (uint16_t)(1U << SK6812_PC6_TOGGLE_KEY_INDEX);
+
+    if (!mcp_ready && ((now - last_mcp_retry_time) >= 1000U)) {
+      last_mcp_retry_time = now;
+      MCP_Init();
+      mcp_ready = MCP_IsReady();
+    }
+
+    if (mcp_ready && ((now - last_scan_time) >= MATRIX_SCAN_MS)) {
+      uint8_t raw_toggle_pressed;
+      last_scan_time = now;
+      raw_keys = Matrix_ScanRaw();
+      raw_toggle_pressed = ((raw_keys & pc6_toggle_bit) != 0U) ? 1U : 0U;
+
+      if (raw_toggle_pressed != pc6_toggle_stable_pressed) {
+        if (pc6_toggle_debounce_count < MATRIX_DEBOUNCE_SCANS) {
+          pc6_toggle_debounce_count++;
+        }
+
+        if (pc6_toggle_debounce_count >= MATRIX_DEBOUNCE_SCANS) {
+          pc6_toggle_stable_pressed = raw_toggle_pressed;
+          pc6_toggle_debounce_count = 0;
+
+          if (pc6_toggle_stable_pressed) {
+            pc6_test_enabled ^= 1U;
+            last_pc6_toggle_ms = now;
+            pc6_color_step = 0U;
+
+            if (pc6_test_enabled) {
+              SK6812_SetAll(pc6_colors[pc6_color_step][0], pc6_colors[pc6_color_step][1], pc6_colors[pc6_color_step][2]);
+            } else {
+              SK6812_SetAll(0U, 0U, 0U);
+            }
+          }
+        }
       } else {
-        SK6812_SetAll(32U, 32U, 32U);  // white
+        pc6_toggle_debounce_count = 0;
       }
-      pc6_color_step = (uint8_t)((pc6_color_step + 1U) & 0x03U);
+    }
+
+    if (pc6_test_enabled && ((now - last_pc6_toggle_ms) >= SK6812_PC6_BLINK_MS)) {
+      last_pc6_toggle_ms = now;
+      pc6_color_step = (uint8_t)((pc6_color_step + 1U) % SK6812_PC6_COLOR_COUNT);
+      SK6812_SetAll(pc6_colors[pc6_color_step][0], pc6_colors[pc6_color_step][1], pc6_colors[pc6_color_step][2]);
     }
 
     if (sk6812_needs_update && !sk6812_dma_busy) {
