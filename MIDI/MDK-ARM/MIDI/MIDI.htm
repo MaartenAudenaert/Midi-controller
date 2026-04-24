@@ -3,9 +3,9 @@
 <title>Static Call Graph - [MIDI\MIDI.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image MIDI\MIDI.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Fri Apr 24 09:05:09 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Fri Apr 24 12:22:36 2026
 <BR><P>
-<H3>Maximum Stack Usage =        788 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        780 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_DMAEx_List_InsertNode &rArr; DMA_List_FindNode
 <P>
@@ -276,7 +276,7 @@ Global Symbols
 <P><STRONG><a name="[174]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[90]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 788 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 780 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_DMAEx_List_InsertNode &rArr; DMA_List_FindNode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1688,8 +1688,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dcd_init
 </UL>
 
-<P><STRONG><a name="[91]"></a>main</STRONG> (Thumb, 3646 bytes, Stack size 328 bytes, main.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 788 + Unknown Stack Size
+<P><STRONG><a name="[91]"></a>main</STRONG> (Thumb, 3484 bytes, Stack size 320 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 780 + Unknown Stack Size
 <LI>Call Chain = main &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_DMAEx_List_InsertNode &rArr; DMA_List_FindNode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tud_midi_n_stream_write

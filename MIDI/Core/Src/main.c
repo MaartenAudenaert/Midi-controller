@@ -71,7 +71,7 @@
 #define SK6812_STARTUP_BLINK_MS     120U
 #define D8_GPIO_TEST_ENABLE         0U
 #define D8_BLINK_MS                 200U
-#define SK6812_PC6_TEST_ENABLE      1U
+#define SK6812_PC6_TEST_ENABLE      0U
 #define SK6812_PC6_BLINK_MS         1000U
 #define SK6812_PC6_TOGGLE_KEY_INDEX 0U
 #define SK6812_PC6_COLOR_COUNT      4U
@@ -112,6 +112,12 @@ static uint8_t sk6812_colors[SK6812_LED_COUNT][3] = {{0}};
 static uint16_t sk6812_pwm_buffer[SK6812_BUFFER_SIZE] = {0};
 static volatile uint8_t sk6812_dma_busy = 0;
 static volatile uint8_t sk6812_needs_update = 0;
+static const uint8_t key_to_led[MATRIX_KEYS] = {
+  0U, 1U, 2U, 3U,
+  4U, 5U, 6U, 7U,
+  8U, 9U, 10U, 11U,
+  12U, 13U, 14U, 15U
+};
 
 /* USER CODE END PV */
 
@@ -190,6 +196,10 @@ static uint16_t Matrix_ScanRaw(void) {
   * @retval None
   */
 static void Matrix_SendMidiKeyEvent(uint8_t key_index, uint8_t pressed) {
+    if (!tud_mounted()) {
+        return;
+    }
+
     uint8_t note = MIDI_BASE_NOTE + key_index;
     uint8_t msg[3] = {
         pressed ? 0x90 : 0x80,             // Status byte (Note ON/OFF channel 1)
@@ -230,10 +240,11 @@ static void Matrix_UpdateDebounce(uint16_t raw_state, uint16_t *stable_state,
                 
                 // Send MIDI event
                 Matrix_SendMidiKeyEvent(i, raw_pressed);
+                uint8_t led_index = key_to_led[i];
                 if (raw_pressed) {
-                  SK6812_SetColor(i, LED_PRESSED_R, LED_PRESSED_G, LED_PRESSED_B);
+                  SK6812_SetColor(led_index, LED_PRESSED_R, LED_PRESSED_G, LED_PRESSED_B);
                 } else {
-                  SK6812_SetColor(i, LED_RELEASED_R, LED_RELEASED_G, LED_RELEASED_B);
+                  SK6812_SetColor(led_index, LED_RELEASED_R, LED_RELEASED_G, LED_RELEASED_B);
                 }
                 debounce_count[i] = 0;
             }
@@ -403,11 +414,12 @@ static void Process_Potentiometers(void)
 
   static void SK6812_ApplyMatrixState(uint16_t stable_state)
   {
-    for (uint8_t i = 0; i < SK6812_LED_COUNT; i++) {
-      if (stable_state & (1U << i)) {
-        SK6812_SetColor(i, LED_PRESSED_R, LED_PRESSED_G, LED_PRESSED_B);
+    for (uint8_t key_index = 0; key_index < MATRIX_KEYS; key_index++) {
+      uint8_t led_index = key_to_led[key_index];
+      if (stable_state & (1U << key_index)) {
+        SK6812_SetColor(led_index, LED_PRESSED_R, LED_PRESSED_G, LED_PRESSED_B);
       } else {
-        SK6812_SetColor(i, LED_RELEASED_R, LED_RELEASED_G, LED_RELEASED_B);
+        SK6812_SetColor(led_index, LED_RELEASED_R, LED_RELEASED_G, LED_RELEASED_B);
       }
     }
   }
@@ -579,6 +591,7 @@ int main(void)
   uint16_t raw_keys = 0;
   uint16_t stable_keys = 0;
   uint8_t debounce_count[MATRIX_KEYS] = {0};
+  uint8_t all_released_scans = 0;
   uint8_t mcp_ready = MCP_IsReady();
   
   uint32_t last_scan_time = 0;
@@ -700,11 +713,23 @@ int main(void)
 #endif
     
     // Matrix scanning (every 2ms)
-    if (tud_mounted() && ((now - last_scan_time) >= MATRIX_SCAN_MS)) {
+    if ((now - last_scan_time) >= MATRIX_SCAN_MS) {
       last_scan_time = now;
       uint16_t prev_stable_keys = stable_keys;
       raw_keys = Matrix_ScanRaw();
       Matrix_UpdateDebounce(raw_keys, &stable_keys, debounce_count);
+
+      // Failsafe: if all keys read released for long enough, force clear stuck states.
+      if (raw_keys == 0U) {
+        if (all_released_scans < MATRIX_DEBOUNCE_SCANS) {
+          all_released_scans++;
+        } else if (stable_keys != 0U) {
+          stable_keys = 0U;
+          SK6812_SetAll(LED_RELEASED_R, LED_RELEASED_G, LED_RELEASED_B);
+        }
+      } else {
+        all_released_scans = 0U;
+      }
 #if LED_STANDBY_ENABLE
       if (stable_keys != prev_stable_keys) {
         last_key_activity_ms = now;
