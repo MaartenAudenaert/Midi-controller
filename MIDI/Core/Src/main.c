@@ -594,8 +594,6 @@ int main(void)
   uint32_t last_pc6_toggle_ms = 0;
   uint8_t pc6_color_step = 0;
   uint8_t pc6_test_enabled = 0;
-  uint8_t pc6_toggle_stable_pressed = 0;
-  uint8_t pc6_toggle_debounce_count = 0;
 #endif
   
 #if MIDI_DIAGNOSTICS
@@ -634,34 +632,22 @@ int main(void)
     }
 
     if (mcp_ready && ((now - last_scan_time) >= MATRIX_SCAN_MS)) {
-      uint8_t raw_toggle_pressed;
+      uint16_t prev_stable_keys;
       last_scan_time = now;
+      prev_stable_keys = stable_keys;
       raw_keys = Matrix_ScanRaw();
-      raw_toggle_pressed = ((raw_keys & pc6_toggle_bit) != 0U) ? 1U : 0U;
+      Matrix_UpdateDebounce(raw_keys, &stable_keys, debounce_count);
 
-      if (raw_toggle_pressed != pc6_toggle_stable_pressed) {
-        if (pc6_toggle_debounce_count < MATRIX_DEBOUNCE_SCANS) {
-          pc6_toggle_debounce_count++;
+      if (((prev_stable_keys & pc6_toggle_bit) == 0U) && ((stable_keys & pc6_toggle_bit) != 0U)) {
+        pc6_test_enabled ^= 1U;
+        last_pc6_toggle_ms = now;
+        pc6_color_step = 0U;
+
+        if (pc6_test_enabled) {
+          SK6812_SetAll(pc6_colors[pc6_color_step][0], pc6_colors[pc6_color_step][1], pc6_colors[pc6_color_step][2]);
+        } else {
+          SK6812_SetAll(0U, 0U, 0U);
         }
-
-        if (pc6_toggle_debounce_count >= MATRIX_DEBOUNCE_SCANS) {
-          pc6_toggle_stable_pressed = raw_toggle_pressed;
-          pc6_toggle_debounce_count = 0;
-
-          if (pc6_toggle_stable_pressed) {
-            pc6_test_enabled ^= 1U;
-            last_pc6_toggle_ms = now;
-            pc6_color_step = 0U;
-
-            if (pc6_test_enabled) {
-              SK6812_SetAll(pc6_colors[pc6_color_step][0], pc6_colors[pc6_color_step][1], pc6_colors[pc6_color_step][2]);
-            } else {
-              SK6812_SetAll(0U, 0U, 0U);
-            }
-          }
-        }
-      } else {
-        pc6_toggle_debounce_count = 0;
       }
     }
 
