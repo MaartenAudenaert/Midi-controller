@@ -53,7 +53,9 @@
 #define SK6812_LED_COUNT       16U
 #define SK6812_BITS_PER_LED    24U
 #define SK6812_RESET_SLOTS     80U
-#define SK6812_BUFFER_SIZE     (SK6812_LED_COUNT * SK6812_BITS_PER_LED + SK6812_RESET_SLOTS)
+#define SK6812_PREAMBLE_SLOTS  2U
+#define SK6812_BUFFER_SIZE     (SK6812_PREAMBLE_SLOTS + SK6812_LED_COUNT * SK6812_BITS_PER_LED + SK6812_RESET_SLOTS)
+#define SK6812_DMA_BUFFER_BYTES (SK6812_BUFFER_SIZE * sizeof(uint16_t))
 #define SK6812_T0H_PERCENT     24U
 #define SK6812_T1H_PERCENT     48U
 #define LED_PRESSED_R          0U
@@ -67,7 +69,7 @@
 #define LED_STANDBY_G          0U
 #define LED_STANDBY_B          16U
 #define LED_STANDBY_TIMEOUT_MS 2000U
-#define SK6812_STARTUP_BLINK_ENABLE 1U
+#define SK6812_STARTUP_BLINK_ENABLE 0U
 #define SK6812_STARTUP_BLINK_MS     120U
 #define D8_GPIO_TEST_ENABLE         0U
 #define D8_BLINK_MS                 200U
@@ -376,6 +378,11 @@ static void Process_Potentiometers(void)
     uint16_t t1h = (uint16_t)((period * SK6812_T1H_PERCENT) / 100U);
     uint32_t index = 0;
 
+    // Preamble: zero-slots absorb any corrupted first PWM pulse
+    for (uint32_t i = 0; i < SK6812_PREAMBLE_SLOTS; i++) {
+      sk6812_pwm_buffer[index++] = 0;
+    }
+
     for (uint8_t led = 0; led < SK6812_LED_COUNT; led++) {
       for (uint8_t byte_index = 0; byte_index < 3U; byte_index++) {
         uint8_t value = sk6812_colors[led][byte_index];
@@ -447,7 +454,13 @@ static void Process_Potentiometers(void)
     SK6812_BuildBuffer();
     sk6812_dma_busy = 1;
 
-    if (HAL_TIM_PWM_Start_DMA(&htim3, TIM_CHANNEL_1, (uint32_t *)sk6812_pwm_buffer, SK6812_BUFFER_SIZE) != HAL_OK) {
+    // Reset counter so the first PWM period is full-length.
+    __HAL_TIM_SET_COUNTER(&htim3, 0);
+
+    // Length MUST be in bytes for STM32H5 GPDMA (BNDT field).
+    if (HAL_TIM_PWM_Start_DMA(&htim3, TIM_CHANNEL_1,
+          (uint32_t *)sk6812_pwm_buffer,
+          (uint16_t)SK6812_DMA_BUFFER_BYTES) != HAL_OK) {
       sk6812_dma_busy = 0;
       Error_Handler();
     }
@@ -461,6 +474,10 @@ static void Process_Potentiometers(void)
 
     HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
     __HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, 0);
+
+    // Force the data pin (PC6) LOW so the SK6812 line does not
+    // float between transfers (which could produce false pulses).
+    GPIOC->BSRR = (uint32_t)GPIO_PIN_6 << 16U;   // Reset PC6
     sk6812_dma_busy = 0;
   }
 
@@ -567,6 +584,15 @@ int main(void)
   ADC_Start();
   SK6812_Init();
   SK6812_BlinkStartup();
+
+  // Ensure all LEDs are off after init (double-show for reliability)
+  SK6812_SetAll(0U, 0U, 0U);
+  SK6812_Show();
+  while (sk6812_dma_busy) {}
+  HAL_Delay(2U);
+  SK6812_Show();
+  while (sk6812_dma_busy) {}
+  sk6812_needs_update = 0;
 
   /* USER CODE END 2 */
 
@@ -718,6 +744,10 @@ int main(void)
       uint16_t prev_stable_keys = stable_keys;
       raw_keys = Matrix_ScanRaw();
       Matrix_UpdateDebounce(raw_keys, &stable_keys, debounce_count);
+
+      if (stable_keys != prev_stable_keys) {
+        SK6812_ApplyMatrixState(stable_keys);
+      }
 
       // Failsafe: if all keys read released for long enough, force clear stuck states.
       if (raw_keys == 0U) {

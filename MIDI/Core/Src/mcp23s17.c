@@ -122,12 +122,13 @@ void MCP_Init(void)
     // Configure MCP23S17 for 4x4 matrix
     // 1. GPA0-3 as outputs (columns), GPA4-7 as inputs
     MCP_Write(MCP_IODIRA, 0xF0);
+    MCP_Write(MCP_GPPUA, 0xF0);
     
-    // 2. GPB0-3 as inputs (rows), GPB4-7 don't care
-    MCP_Write(MCP_IODIRB, 0x0F);
+    // 2. GPB0-3 are rows. Keep GPB4-7 as pulled inputs too, so unused pins never drive the matrix.
+    MCP_Write(MCP_IODIRB, 0xFF);
     
-    // 3. Enable pull-ups on row inputs
-    MCP_Write(MCP_GPPUB, 0x0F);
+    // 3. Enable pull-ups on all GPB inputs
+    MCP_Write(MCP_GPPUB, 0xFF);
     
     // 4. All columns HIGH (idle state)
     MCP_Write(MCP_GPIOA, 0x0F);
@@ -148,14 +149,16 @@ void MCP_Write(uint8_t reg, uint8_t value)
 /**
   * @brief  Read from MCP23S17 register using detected CS pin
   * @param  reg: Register address
-  * @retval Read value (0 if error)
+  * @retval Read value (0xFF if error, safe for active-low inputs)
   */
 uint8_t MCP_Read(uint8_t reg)
 {
-    if (!s_mcp_ready) return 0;
+    if (!s_mcp_ready) return 0xFF;
     
-    uint8_t value = 0;
-    mcp_read_cs(s_active_cs.port, s_active_cs.pin, reg, &value);
+    uint8_t value = 0xFF;
+    if (mcp_read_cs(s_active_cs.port, s_active_cs.pin, reg, &value) != HAL_OK) {
+        return 0xFF;
+    }
     return value;
 }
 

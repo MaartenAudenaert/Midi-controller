@@ -3,7 +3,7 @@
 <title>Static Call Graph - [MIDI\MIDI.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image MIDI\MIDI.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Fri Apr 24 12:22:36 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Sun Jun  7 20:39:21 2026
 <BR><P>
 <H3>Maximum Stack Usage =        780 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1317,7 +1317,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_DMAError
 </UL>
 
-<P><STRONG><a name="[e6]"></a>HAL_TIM_MspPostInit</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, stm32h5xx_hal_msp.o(.text.HAL_TIM_MspPostInit))
+<P><STRONG><a name="[e6]"></a>HAL_TIM_MspPostInit</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, stm32h5xx_hal_msp.o(.text.HAL_TIM_MspPostInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_TIM_MspPostInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
@@ -1348,7 +1348,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
 </UL>
 
-<P><STRONG><a name="[ed]"></a>HAL_TIM_PWM_PulseFinishedCallback</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, main.o(.text.HAL_TIM_PWM_PulseFinishedCallback))
+<P><STRONG><a name="[ed]"></a>HAL_TIM_PWM_PulseFinishedCallback</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, main.o(.text.HAL_TIM_PWM_PulseFinishedCallback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_TIM_PWM_PulseFinishedCallback &rArr; HAL_TIM_PWM_Stop_DMA
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Stop_DMA
@@ -1399,7 +1399,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h533xx.o(RESET)
 </UL>
-<P><STRONG><a name="[f6]"></a>MCP_Init</STRONG> (Thumb, 1178 bytes, Stack size 48 bytes, mcp23s17.o(.text.MCP_Init))
+<P><STRONG><a name="[f6]"></a>MCP_Init</STRONG> (Thumb, 1250 bytes, Stack size 48 bytes, mcp23s17.o(.text.MCP_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MCP_Init &rArr; HAL_SPI_TransmitReceive
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
@@ -1413,7 +1413,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f8]"></a>MCP_Read</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, mcp23s17.o(.text.MCP_Read))
+<P><STRONG><a name="[f8]"></a>MCP_Read</STRONG> (Thumb, 114 bytes, Stack size 32 bytes, mcp23s17.o(.text.MCP_Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = MCP_Read &rArr; HAL_SPI_TransmitReceive
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
@@ -1688,7 +1688,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dcd_init
 </UL>
 
-<P><STRONG><a name="[91]"></a>main</STRONG> (Thumb, 3484 bytes, Stack size 320 bytes, main.o(.text.main))
+<P><STRONG><a name="[91]"></a>main</STRONG> (Thumb, 3708 bytes, Stack size 320 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 780 + Unknown Stack Size
 <LI>Call Chain = main &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_DMAEx_List_InsertNode &rArr; DMA_List_FindNode
 </UL>
@@ -2164,7 +2164,7 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[fa]"></a>SK6812_Show</STRONG> (Thumb, 642 bytes, Stack size 32 bytes, main.o(.text.SK6812_Show))
+<P><STRONG><a name="[fa]"></a>SK6812_Show</STRONG> (Thumb, 646 bytes, Stack size 32 bytes, main.o(.text.SK6812_Show))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
 <LI>Call Chain = SK6812_Show &rArr; HAL_TIM_PWM_Start_DMA &rArr; HAL_DMAEx_List_Start_IT
 </UL>
