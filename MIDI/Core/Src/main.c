@@ -32,51 +32,64 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define MATRIX_ROWS            4
-#define MATRIX_COLS            4
-#define MATRIX_KEYS            16
-#define MATRIX_SCAN_MS         2   // Scan every 2ms
-#define MATRIX_DEBOUNCE_SCANS  8   // 8 scans = 16ms debounce
-#define MIDI_BASE_NOTE         60  // Middle C
-#define MIDI_NOTE_VELOCITY     127 // Max velocity
-#define MIDI_DIAGNOSTICS       0   // Set to 1 for debugging
-#define HYSTERESIS             2
-#define NUM_POTS               8
-#define MIDI_CC_START          16
-#define POT_FILTER_SAMPLES     4U
-#define POT_MIN_INTERVAL_MS    20U
-#define ADC_MAX_VALUE          4095U
-#define MIDI_MAX_VALUE         127U
-#define MIDI_DEADBAND_LOW      2U
-#define MIDI_DEADBAND_HIGH     (MIDI_MAX_VALUE - MIDI_DEADBAND_LOW)
-#define POTS_INVERT_DIRECTION  1U
-#define SK6812_LED_COUNT       16U
-#define SK6812_BITS_PER_LED    24U
-#define SK6812_RESET_SLOTS     80U
-#define SK6812_PREAMBLE_SLOTS  2U
+// --- Toetsmatrix ---
+#define MATRIX_ROWS            4                // Aantal rijen in de matrix
+#define MATRIX_COLS            4                // Aantal kolommen in de matrix
+#define MATRIX_KEYS            16               // Totaal aantal toetsen (4x4)
+#define MATRIX_SCAN_MS         2                // Scan interval in ms
+#define MATRIX_DEBOUNCE_SCANS  8               // Aantal scans voor debounce (8 x 2ms = 16ms)
+
+// --- MIDI instellingen ---
+#define MIDI_BASE_NOTE         60               // Startnoot (Middle C = 60)
+#define MIDI_NOTE_VELOCITY     127              // Aanslagsnelheid (maximaal)
+#define MIDI_DIAGNOSTICS       0               // Zet op 1 om debug CC-berichten te sturen
+
+// --- Potentiometers ---
+#define HYSTERESIS             2               // Minimale MIDI-stap voor verzending (voorkomt ruis)
+#define NUM_POTS               8               // Aantal potentiometers
+#define MIDI_CC_START          16              // Eerste MIDI CC nummer (CC16 t/m CC23)
+#define POT_FILTER_SAMPLES     4U             // Aantal samples voor moving-average filter
+#define POT_MIN_INTERVAL_MS    20U            // Minimale tijd tussen twee CC-berichten per pot
+#define ADC_MAX_VALUE          4095U          // Maximale ADC waarde (12-bit)
+#define MIDI_MAX_VALUE         127U           // Maximale MIDI waarde
+#define MIDI_DEADBAND_LOW      2U             // Waarden <= dit worden afgerond naar 0
+#define MIDI_DEADBAND_HIGH     (MIDI_MAX_VALUE - MIDI_DEADBAND_LOW)  // Waarden >= dit worden 127
+#define POTS_INVERT_DIRECTION  1U             // 1 = draairichting omdraaien
+
+// --- SK6812 LED strip (GRB, via TIM3 CH1 PWM + DMA op PC6) ---
+#define SK6812_LED_COUNT       16U            // Aantal LEDs op de strip
+#define SK6812_BITS_PER_LED    24U            // 8 bits per kleurkanaal (G, R, B)
+#define SK6812_RESET_SLOTS     80U            // Reset-periode: min. 80µs LOW (80 PWM slots)
+#define SK6812_PREAMBLE_SLOTS  2U             // Extra lege slots vooraan zodat een corrupte eerste puls nooit LED 0 raakt
 #define SK6812_BUFFER_SIZE     (SK6812_PREAMBLE_SLOTS + SK6812_LED_COUNT * SK6812_BITS_PER_LED + SK6812_RESET_SLOTS)
-#define SK6812_DMA_BUFFER_BYTES (SK6812_BUFFER_SIZE * sizeof(uint16_t))
-#define SK6812_T0H_PERCENT     24U
-#define SK6812_T1H_PERCENT     48U
-#define LED_PRESSED_R          0U
+#define SK6812_DMA_BUFFER_BYTES (SK6812_BUFFER_SIZE * sizeof(uint16_t))  // Grootte in bytes (STM32H5 GPDMA verwacht bytes)
+#define SK6812_T0H_PERCENT     24U            // Duty cycle voor een '0'-bit (~300ns bij 1,25µs periode)
+#define SK6812_T1H_PERCENT     48U            // Duty cycle voor een '1'-bit (~600ns bij 1,25µs periode)
+
+// --- LED kleuren ---
+#define LED_PRESSED_R          0U             // Kleur ingedrukte toets (groen)
 #define LED_PRESSED_G          64U
 #define LED_PRESSED_B          0U
-#define LED_RELEASED_R         0U
+#define LED_RELEASED_R         0U             // Kleur losgelaten toets (uit)
 #define LED_RELEASED_G         0U
 #define LED_RELEASED_B         0U
-#define LED_STANDBY_ENABLE     0U
-#define LED_STANDBY_R          0U
+
+// --- Standby modus (automatisch dimmen bij inactiviteit) ---
+#define LED_STANDBY_ENABLE     0U             // 1 = standby modus aan
+#define LED_STANDBY_R          0U             // Standby kleur (blauw)
 #define LED_STANDBY_G          0U
 #define LED_STANDBY_B          16U
-#define LED_STANDBY_TIMEOUT_MS 2000U
-#define SK6812_STARTUP_BLINK_ENABLE 0U
-#define SK6812_STARTUP_BLINK_MS     120U
-#define D8_GPIO_TEST_ENABLE         0U
+#define LED_STANDBY_TIMEOUT_MS 2000U          // Tijd zonder input voor standby (ms)
+
+// --- Debug / testmodi (zet op 0U voor normale werking) ---
+#define SK6812_STARTUP_BLINK_ENABLE 0U       // Opstartknippering aan/uit
+#define SK6812_STARTUP_BLINK_MS     120U     // Duur knippering (ms)
+#define D8_GPIO_TEST_ENABLE         0U       // Toggle PA9 (D8) als hartslag
 #define D8_BLINK_MS                 200U
-#define SK6812_PC6_TEST_ENABLE      0U
+#define SK6812_PC6_TEST_ENABLE      0U       // LED kleurtest via toets 0
 #define SK6812_PC6_BLINK_MS         1000U
-#define SK6812_PC6_TOGGLE_KEY_INDEX 0U
-#define SK6812_PC6_COLOR_COUNT      4U
+#define SK6812_PC6_TOGGLE_KEY_INDEX 0U       // Welke toets de kleurtest aan/uitzet
+#define SK6812_PC6_COLOR_COUNT      4U       // Aantal kleuren in de rotatie
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -101,19 +114,24 @@ DMA_HandleTypeDef handle_GPDMA1_Channel1;
 PCD_HandleTypeDef hpcd_USB_DRD_FS;
 
 /* USER CODE BEGIN PV */
-volatile uint16_t adc_buffer[NUM_POTS] = {0};    // Filled continuously by ADC DMA
-volatile uint16_t adc_snapshot[NUM_POTS] = {0};  // Stable copy of the latest full scan
-volatile uint8_t adc_frame_ready = 0;
-uint8_t last_midi_value[NUM_POTS] = {0};
-uint16_t pot_history[NUM_POTS][POT_FILTER_SAMPLES] = {{0}};
-uint32_t pot_history_sum[NUM_POTS] = {0};
-uint8_t pot_history_index = 0;
-uint8_t pot_filter_primed = 0;
-uint32_t last_pot_send_ms[NUM_POTS] = {0};
-static uint8_t sk6812_colors[SK6812_LED_COUNT][3] = {{0}};
-static uint16_t sk6812_pwm_buffer[SK6812_BUFFER_SIZE] = {0};
-static volatile uint8_t sk6812_dma_busy = 0;
-static volatile uint8_t sk6812_needs_update = 0;
+// ADC / potentiometer variabelen
+volatile uint16_t adc_buffer[NUM_POTS] = {0};    // Wordt continu gevuld door ADC DMA (circulair)
+volatile uint16_t adc_snapshot[NUM_POTS] = {0};  // Stabiele kopie na elke volledige scan
+volatile uint8_t adc_frame_ready = 0;            // Vlag: nieuwe ADC-data beschikbaar
+uint8_t last_midi_value[NUM_POTS] = {0};         // Laatste verzonden MIDI waarde per pot
+uint16_t pot_history[NUM_POTS][POT_FILTER_SAMPLES] = {{0}};  // Ringbuffer voor moving-average
+uint32_t pot_history_sum[NUM_POTS] = {0};        // Lopende som van de ringbuffer
+uint8_t pot_history_index = 0;                   // Huidige schrijfpositie in de ringbuffer
+uint8_t pot_filter_primed = 0;                   // 0 = filter nog niet gevuld (eerste run)
+uint32_t last_pot_send_ms[NUM_POTS] = {0};       // Tijdstip van laatste CC-bericht per pot
+
+// SK6812 LED variabelen
+static uint8_t sk6812_colors[SK6812_LED_COUNT][3] = {{0}};   // Gewenste kleur per LED [G, R, B]
+static uint16_t sk6812_pwm_buffer[SK6812_BUFFER_SIZE] = {0}; // PWM compare-waarden voor DMA
+static volatile uint8_t sk6812_dma_busy = 0;     // 1 = DMA transfer bezig, niet starten
+static volatile uint8_t sk6812_needs_update = 0; // 1 = nieuwe kleurdata klaar om te sturen
+
+// Mapping van toetsindex (0-15) naar LED-index op de strip
 static const uint8_t key_to_led[MATRIX_KEYS] = {
   0U, 1U, 2U, 3U,
   4U, 5U, 6U, 7U,
@@ -257,24 +275,37 @@ static void Matrix_UpdateDebounce(uint16_t raw_state, uint16_t *stable_state,
     }
 }
 
+/**
+  * @brief  ADC DMA-conversie voltooid callback
+  *         Wordt opgeroepen na elke volledige scan van alle 8 kanalen.
+  *         Kopieert de ADC buffer naar een stabiele snapshot zodat de
+  *         hoofdlus atomisch kan lezen terwijl DMA door blijft schrijven.
+  */
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
     if (hadc->Instance != ADC1) {
         return;
     }
 
-    // Keep channel values from the same scan together before the DMA writes again.
+    // Kopieer buffer naar snapshot voordat DMA de volgende ronde start
     for (uint8_t i = 0; i < NUM_POTS; i++) {
         adc_snapshot[i] = adc_buffer[i];
     }
 
-    adc_frame_ready = 1;
+    adc_frame_ready = 1;  // Signaleer aan hoofdlus dat data klaar is
 }
 
+/**
+  * @brief  Zet een ruwe ADC-waarde (0-4095) om naar een MIDI waarde (0-127).
+  *         Past een deadband toe aan beide uiteinden en keert eventueel de
+  *         richting om (POTS_INVERT_DIRECTION).
+  */
 static uint8_t Pot_ConvertToMidi(uint16_t raw_value)
 {
+    // Schaal 0-4095 naar 0-127 met afronding
     uint8_t midi_value = (uint8_t)(((uint32_t)raw_value * MIDI_MAX_VALUE + (ADC_MAX_VALUE / 2U)) / ADC_MAX_VALUE);
 
+    // Deadband: kleine waarden aan de uiteinden worden vastgezet op 0 of 127
     if (midi_value <= MIDI_DEADBAND_LOW) {
         midi_value = 0;
     } else if (midi_value >= MIDI_DEADBAND_HIGH) {
@@ -282,12 +313,16 @@ static uint8_t Pot_ConvertToMidi(uint16_t raw_value)
     }
 
 #if POTS_INVERT_DIRECTION
-    midi_value = (uint8_t)(MIDI_MAX_VALUE - midi_value);
+    midi_value = (uint8_t)(MIDI_MAX_VALUE - midi_value);  // Draairichting omdraaien
 #endif
 
     return midi_value;
 }
 
+/**
+  * @brief  Start de ADC in DMA-modus met TIM6 als trigger.
+  *         TIM6 bepaalt de samplefrequentie; DMA vult adc_buffer circulair.
+  */
 static void ADC_Start(void)
 {
     if (HAL_TIM_Base_Start(&htim6) != HAL_OK) {
@@ -299,16 +334,23 @@ static void ADC_Start(void)
     }
 }
 
+/**
+  * @brief  Verwerkt de potentiometers en stuurt MIDI CC-berichten.
+  *         Roept u elke lus aan; werkt alleen als er nieuwe ADC-data is.
+  *         Gebruikt een moving-average filter en hysterese om ruis te onderdrukken.
+  */
 static void Process_Potentiometers(void)
 {
     if (!adc_frame_ready) {
-        return;
+        return;  // Nog geen nieuwe ADC-data, niets te doen
     }
 
     adc_frame_ready = 0;
-  uint32_t now_ms = HAL_GetTick();
+    uint32_t now_ms = HAL_GetTick();
 
     if (!pot_filter_primed) {
+        // Eerste run: vul de hele ringbuffer met de huidige waarde zodat
+        // het gemiddelde meteen geldig is (geen opwarmtijd)
         for (uint8_t i = 0; i < NUM_POTS; i++) {
             uint16_t sample = adc_snapshot[i] & ADC_MAX_VALUE;
 
@@ -326,40 +368,50 @@ static void Process_Potentiometers(void)
     }
 
     for (uint8_t i = 0; i < NUM_POTS; i++) {
+        // Schuif nieuw sample in de ringbuffer (moving average)
         uint16_t sample = adc_snapshot[i] & ADC_MAX_VALUE;
-        pot_history_sum[i] -= pot_history[i][pot_history_index];
+        pot_history_sum[i] -= pot_history[i][pot_history_index];  // Oudste waarde eruit
         pot_history[i][pot_history_index] = sample;
-        pot_history_sum[i] += sample;
+        pot_history_sum[i] += sample;                             // Nieuwste waarde erin
 
         uint16_t averaged_sample = (uint16_t)(pot_history_sum[i] / POT_FILTER_SAMPLES);
         uint8_t new_value = Pot_ConvertToMidi(averaged_sample);
+
+        // Bereken absolute verandering t.o.v. laatste verzonden waarde
         int16_t diff = (int16_t)new_value - (int16_t)last_midi_value[i];
         if (diff < 0) {
             diff = -diff;
         }
 
+        // Stuur alleen als de verandering groot genoeg is EN de minimale interval verstreken is
         if ((diff >= HYSTERESIS) && ((now_ms - last_pot_send_ms[i]) >= POT_MIN_INTERVAL_MS)) {
             if (tud_mounted()) {
-                uint8_t msg[3] = {0xB0, (uint8_t)(MIDI_CC_START + i), new_value};
+                uint8_t msg[3] = {0xB0, (uint8_t)(MIDI_CC_START + i), new_value};  // CC channel 1
                 tud_midi_stream_write(0, msg, 3);
             }
 
             last_midi_value[i] = new_value;
-          last_pot_send_ms[i] = now_ms;
+            last_pot_send_ms[i] = now_ms;
         }
     }
 
+    // Volgende slot in de ringbuffer
     pot_history_index++;
     if (pot_history_index >= POT_FILTER_SAMPLES) {
         pot_history_index = 0;
     }
 }
 
+  /**
+    * @brief  Initialiseer de kleurarray van alle LEDs.
+    *         Standby-modus aan: beginnen in standby kleur.
+    *         Standby-modus uit: beginnen als uit (released kleur).
+    */
   static void SK6812_Init(void)
   {
     for (uint8_t i = 0; i < SK6812_LED_COUNT; i++) {
   #if LED_STANDBY_ENABLE
-      sk6812_colors[i][0] = LED_STANDBY_G;
+      sk6812_colors[i][0] = LED_STANDBY_G;   // SK6812 byte-volgorde: G, R, B
       sk6812_colors[i][1] = LED_STANDBY_R;
       sk6812_colors[i][2] = LED_STANDBY_B;
   #else
@@ -371,18 +423,24 @@ static void Process_Potentiometers(void)
     sk6812_needs_update = 1;
   }
 
+  /**
+    * @brief  Bouw de PWM DMA-buffer op vanuit de kleurarray.
+    *         Structuur: [preamble 0-slots] [LED data] [reset 0-slots]
+    *         Elke bit wordt een PWM compare-waarde: t1h voor '1', t0h voor '0'.
+    */
   static void SK6812_BuildBuffer(void)
   {
-    uint16_t period = (uint16_t)(htim3.Init.Period + 1U);
-    uint16_t t0h = (uint16_t)((period * SK6812_T0H_PERCENT) / 100U);
-    uint16_t t1h = (uint16_t)((period * SK6812_T1H_PERCENT) / 100U);
+    uint16_t period = (uint16_t)(htim3.Init.Period + 1U);          // TIM3 periode in ticks
+    uint16_t t0h = (uint16_t)((period * SK6812_T0H_PERCENT) / 100U); // Compare voor bit '0'
+    uint16_t t1h = (uint16_t)((period * SK6812_T1H_PERCENT) / 100U); // Compare voor bit '1'
     uint32_t index = 0;
 
-    // Preamble: zero-slots absorb any corrupted first PWM pulse
+    // Preamble: lege slots zodat een corrupte eerste puls nooit LED 0 raakt
     for (uint32_t i = 0; i < SK6812_PREAMBLE_SLOTS; i++) {
       sk6812_pwm_buffer[index++] = 0;
     }
 
+    // LED data: voor elke LED, 3 bytes (G, R, B), MSB eerst
     for (uint8_t led = 0; led < SK6812_LED_COUNT; led++) {
       for (uint8_t byte_index = 0; byte_index < 3U; byte_index++) {
         uint8_t value = sk6812_colors[led][byte_index];
@@ -392,6 +450,7 @@ static void Process_Potentiometers(void)
       }
     }
 
+    // Reset-periode: minstens 80µs LOW zodat de SK6812 de data vastzet
     for (uint32_t i = 0; i < SK6812_RESET_SLOTS; i++) {
       sk6812_pwm_buffer[index++] = 0;
     }
@@ -711,14 +770,14 @@ int main(void)
     continue;
 #endif
     
-    // Retry MCP detection if not ready
+    // MCP23S17 niet gevonden bij opstarten: probeer elke seconde opnieuw
     if (!mcp_ready) {
       if ((now - last_mcp_retry_time) >= 1000) {
         last_mcp_retry_time = now;
         MCP_Init();
         mcp_ready = MCP_IsReady();
       }
-      continue;
+      continue;  // Sla de rest van de lus over zolang MCP niet klaar is
     }
     
 #if MIDI_DIAGNOSTICS
@@ -746,18 +805,20 @@ int main(void)
     }
 #endif
     
-    // Matrix scanning (every 2ms)
+    // Scan de toetsmatrix elke 2ms
     if ((now - last_scan_time) >= MATRIX_SCAN_MS) {
       last_scan_time = now;
       uint16_t prev_stable_keys = stable_keys;
-      raw_keys = Matrix_ScanRaw();
-      Matrix_UpdateDebounce(raw_keys, &stable_keys, debounce_count);
+      raw_keys = Matrix_ScanRaw();                                        // Lees ruwe toestand
+      Matrix_UpdateDebounce(raw_keys, &stable_keys, debounce_count);      // Debounce + MIDI events
 
+      // Update LEDs als de stabiele toestand veranderd is
       if (stable_keys != prev_stable_keys) {
         SK6812_ApplyMatrixState(stable_keys);
       }
 
-      // Failsafe: if all keys read released for long enough, force clear stuck states.
+      // Failsafe: als alle toetsen lang genoeg losgelaten zijn,
+      // forceer alles naar released (voorkomt vasthangen bij storingen)
       if (raw_keys == 0U) {
         if (all_released_scans < MATRIX_DEBOUNCE_SCANS) {
           all_released_scans++;
@@ -770,9 +831,9 @@ int main(void)
       }
 #if LED_STANDBY_ENABLE
       if (stable_keys != prev_stable_keys) {
-        last_key_activity_ms = now;
+        last_key_activity_ms = now;  // Registreer laatste activiteit
         if (standby_active && stable_keys != 0) {
-          standby_active = 0;
+          standby_active = 0;        // Uit standby bij toetsinvoer
           SK6812_ApplyMatrixState(stable_keys);
         }
       }
@@ -780,12 +841,14 @@ int main(void)
     }
 
 #if LED_STANDBY_ENABLE
+    // Ga naar standby als er te lang geen invoer is geweest
     if (!standby_active && (stable_keys == 0) && ((now - last_key_activity_ms) >= LED_STANDBY_TIMEOUT_MS)) {
       standby_active = 1;
       SK6812_SetAll(LED_STANDBY_R, LED_STANDBY_G, LED_STANDBY_B);
     }
 #endif
 
+    // Stuur LED-data via DMA als er een update klaarstaat en de vorige transfer klaar is
     if (sk6812_needs_update && !sk6812_dma_busy) {
       sk6812_needs_update = 0;
       SK6812_Show();
