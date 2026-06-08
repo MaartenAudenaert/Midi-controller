@@ -454,6 +454,10 @@ static void Process_Potentiometers(void)
     SK6812_BuildBuffer();
     sk6812_dma_busy = 1;
 
+    // Switch PC6 back to AF mode (TIM3_CH1) before starting the transfer.
+    // Between transfers the pin is held as GPIO-output-LOW to prevent noise.
+    GPIOC->MODER = (GPIOC->MODER & ~(3U << (6U * 2U))) | (2U << (6U * 2U));
+
     // Reset counter so the first PWM period is full-length.
     __HAL_TIM_SET_COUNTER(&htim3, 0);
 
@@ -475,9 +479,13 @@ static void Process_Potentiometers(void)
     HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
     __HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, 0);
 
-    // Force the data pin (PC6) LOW so the SK6812 line does not
-    // float between transfers (which could produce false pulses).
-    GPIOC->BSRR = (uint32_t)GPIO_PIN_6 << 16U;   // Reset PC6
+    // Switch PC6 from AF to GPIO-output-LOW so the SK6812 data line
+    // is actively driven LOW between transfers.  A floating AF pin
+    // picks up noise (e.g. from nearby pot signals) that the SK6812
+    // interprets as data, corrupting LED 0.
+    GPIOC->BSRR = (uint32_t)GPIO_PIN_6 << 16U;          // drive LOW
+    GPIOC->MODER = (GPIOC->MODER & ~(3U << (6U * 2U)))  // clear bits
+                 | (1U << (6U * 2U));                    // 01 = output
     sk6812_dma_busy = 0;
   }
 
